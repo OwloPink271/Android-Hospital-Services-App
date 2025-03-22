@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentification.New_user_data">
+
+    <TextView
+        android:id="@+id/textView_new1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="199dp"
+        android:text="Hello!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_new2"
+        android:layout_width="353dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="32dp"
+        android:text="Your registration has been a success, but you still have to tell us your name."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_new1" />
+
+    <TextView
+        android:id="@+id/textView_new4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="136dp"
+        android:text="First name + middle name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_new3" />
+
+    <TextView
+        android:id="@+id/textView_new3"
+        android:layout_width="363dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:text="Please complete the blank spaces below to complete your registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_new2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="393dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_new5"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_new_first_middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your first and middle name goes here"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="290dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_new5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="23dp"
+        android:text="Your last name"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="395dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_new6"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your last name goes here"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="447dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_new6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="26dp"
+        android:text="Please select your gender"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup_genders"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_genders"
+        android:layout_width="284dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="37dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button_back_to_register"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton_male_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Male"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_female_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Female"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="576dp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_back_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="22dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_finish_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="22dp"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

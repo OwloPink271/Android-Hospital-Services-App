@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "682006424506",
+    "project_id": "proiect-licenta-cb636",
+    "storage_bucket": "proiect-licenta-cb636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682006424506:android:35285df032623e27c64b83",
+        "android_client_info": {
+          "package_name": "com.example.testare_proiect_licenta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1oBoRVhpSytlrdq1e32m0Lm2fNchaLWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

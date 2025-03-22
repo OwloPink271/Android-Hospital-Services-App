@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Testare_Proiect_Licenta"
+        tools:targetApi="31">
+        <activity
+            android:name=".Listare_Departamente"
+            android:exported="false" />
+        <activity
+            android:name=".adaptori.Spital_Mare"
+            android:exported="false" />
+        <activity
+            android:name=".cautare.CautareSpital"
+            android:exported="false" />
+        <activity
+            android:name=".Main_user_nav"
+            android:exported="false"
+            android:label="@string/title_activity_main_user_nav"
+            android:theme="@style/Theme.Testare_Proiect_Licenta.NoActionBar" />
+        <activity
+            android:name=".Nav_drawer"
+            android:exported="false" />
+        <activity
+            android:name=".Action_bar"
+            android:exported="false" />
+        <activity
+            android:name=".Main_User_Page"
+            android:exported="false" />
+        <activity
+            android:name=".authentification.Reset_password"
+            android:exported="false" />
+        <activity
+            android:name=".authentification.Reset_email_pass"
+            android:exported="false" />
+        <activity
+            android:name=".old.map_test_first"
+            android:exported="false" />
+        <activity
+            android:name=".old.Adapter_big"
+            android:exported="false" />
+        <activity
+            android:name=".old.Custom_adapter"
+            android:exported="false" />
+        <activity
+            android:name=".authentification.New_user_data"
+            android:exported="false" />
+        <activity
+            android:name=".authentification.Register"
+            android:exported="false" />
+        <activity
+            android:name=".authentification.Login"
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.Testare_Proiect_Licenta">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".old.MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api_key" />
+    </application>
+
+</manifest>
