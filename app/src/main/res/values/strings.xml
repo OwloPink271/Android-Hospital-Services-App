@@ -2,7 +2,7 @@
     <string name="app_name">Testare_Proiect_Licenta</string>
     <string name="title_activity_login">Login</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="my_map_api_key">AIzaSyA89UKbOq9Ic5GjP5efhNB7uTyp8K6V26A</string>
+    <string name="my_map_api_key">YOUR_API_KEY_GOES_HERE</string>
     <string name="title_activity_main_user_nav">Main_user_nav</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
